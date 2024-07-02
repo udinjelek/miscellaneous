@@ -1,0 +1,212 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-2 sidebar">
+        <div class="card overflow-hidden mt-5">
+            <img class="card-img-top" >
+            <div class="card-body">
+                <h5 class="card-title">List Quiz</h5>
+                <p class="card-text"></p>
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" tabindex="0">
+                    <a href="#">1.A abc</a>
+                  </li>
+                  <li class="list-group-item" tabindex="0">
+                    <a href="#">1.B abc</a>
+                  </li>
+                  <li class="list-group-item" tabindex="0">
+                    <a href="#">1.C abc</a>
+                  </li>
+            </ul>
+            
+            <div class="card-footer">
+                
+            </div>
+        </div>
+        <!-- Content here -->
+      </div>
+      <div class="col-10 data-main">
+        <h1 class="text-primary">Ganti deh di protest beta</h1>
+        <button class="btn btn-success" (click)="loadData()">Iya g tau kenapa. tiba tiba, kaya GPT aja</button>
+        
+        <!-- SampleData -->
+        <div class="row mt-2 mb-2">
+          <hr>
+          <div class="col-4">
+            <h5>Table PR</h5>
+            <div class="card overflow-hidden mt-1 shadow bg-white rounded">
+                <div class="card-body">
+                  <ng-container *ngTemplateOutlet="table_Pr"></ng-container>
+                </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <h5>Table PO</h5>
+            <div class="card overflow-hidden mt-1 shadow bg-white rounded">
+                <div class="card-body">
+                  <ng-container *ngTemplateOutlet="table_Po"></ng-container>
+                </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <h5>Table CER</h5>
+            <div class="card overflow-hidden mt-1 shadow bg-white rounded">
+                <div class="card-body">
+                  <ng-container *ngTemplateOutlet="table_Cer"></ng-container>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- CountPoCerInPo -->
+        <div class="row mt-2 mb-2">
+          <hr>
+          <div class="col-4">
+              <h5>Result Query</h5>
+              <div class="card overflow-hidden mt-1 shadow bg-white rounded">
+                  <div class="card-body">
+                    <ng-container *ngTemplateOutlet="table_CountPoCerInPr"></ng-container>
+                  </div>
+              </div>
+          </div>
+          <div class="col-8"> 
+              <h5>SQL Code Count PO CER In PO</h5>
+              <app-code-with-line-numbers [code]="queryCountPoCerInPr"></app-code-with-line-numbers>
+          </div>
+        </div>
+        <!-- BreakdownCountPoCerInPo -->
+        <div class="row mt-2 mb-2">
+            <hr>
+            <div class="col-4">
+                <h5>Result Query</h5>
+                <div class="card overflow-hidden mt-1 shadow bg-white rounded">
+                    <div class="card-body">
+                      <ng-container *ngTemplateOutlet="table_BreakdownCountPoCerInPr"></ng-container>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8"> 
+                <h5>SQL Code Breakdown Count PO CER In PO</h5>
+                <app-code-with-line-numbers [code]="queryBreakdownCountPoCerInPr"></app-code-with-line-numbers>
+            </div>
+        </div>
+        
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione id similique laudantium, dolore error corrupti tempora molestias omnis asperiores quisquam magni, modi, facilis rem doloremque. Nam debitis vel maiores explicabo excepturi voluptatibus laboriosam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores quos suscipit deleniti totam explicabo atque eveniet saepe numquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis quas nam quos sed tempora deleniti ab beatae aut reiciendis earum quia adipisci fuga mollitia eaque odio dolorem vel, voluptate modi? Et sit ipsa, nesciunt autem, accusamus totam accusantium optio non nisi est eius consequatur distinctio, maxime obcaecati similique? Quasi consectetur non ad soluta repellat! Dignissimos cum facere est quas, aspernatur quisquam similique ratione consequuntur perferendis repellat voluptatum doloribus libero corporis assumenda facilis distinctio eaque sit dolorem voluptas. Velit delectus sint amet facilis eius tempore reprehenderit unde veniam molestiae possimus. Alias sequi obcaecati rem animi ipsa voluptatibus eos aperiam provident sint nisi, eum sit labore, voluptas blanditiis. Corrupti ullam id, autem quo excepturi exercitationem ipsum dolor a, ut vitae minima similique provident unde quis? Hic laborum aut facere est doloribus, soluta temporibus exercitationem? Quae nisi quos recusandae voluptate aperiam quis labore mollitia assumenda culpa. Debitis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quasi laboriosam consequuntur nulla voluptatem expedita quisquam, facere vitae tempora illum vero officia commodi? Natus, aliquid cumque? Quia repellat consequatur odit et necessitatibus ea perspiciatis iure eum quidem optio dignissimos ratione expedita quibusdam consequuntur atque nostrum consectetur, libero dolores dolorum a repudiandae mollitia voluptatem tenetur. Aliquid alias dignissimos nisi officia sequi soluta sit dolorum, est, incidunt temporibus dolorem vitae, perferendis unde consequatur natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem voluptatum ullam possimus, aspernatur, hic pariatur voluptatibus ut, distinctio animi omnis quas aperiam similique ad aut corporis et molestias est reprehenderit rerum eligendi perspiciatis adipisci ratione! Possimus, minus provident delectus deserunt eveniet minima expedita tenetur quo voluptas earum quisquam ullam sed non quidem illo voluptate nesciunt, sunt incidunt assumenda itaque culpa, sint suscipit. Quasi, illo quo? Asperiores accusamus nam veniam eius dolore commodi! Quod ab natus minus architecto veritatis porro ipsam facere quis maiores suscipit ut, fugit accusamus adipisci dolores ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum facilis adipisci atque laudantium quia aspernatur officiis iste quasi perferendis neque, sunt iusto totam alias. Culpa laboriosam facere officiis, esse amet excepturi quam ipsum sit totam, odio, asperiores omnis temporibus! Obcaecati commodi pariatur corporis quaerat facilis, atque nemo animi voluptates impedit nobis culpa sapiente dolorem repellat assumenda. Numquam eveniet ex cumque harum veniam velit consequuntur ab magni molestias dignissimos dolorem, id quasi assumenda enim in repellat sit? A obcaecati doloribus omnis in enim culpa ullam rem sapiente, fugiat nam ea deleniti iure pariatur quos iste totam dolorem, ipsam officia tempora exercitationem voluptas. Delectus totam consequatur nesciunt debitis sed inventore, at veritatis similique iste atque expedita cum. Ipsum eveniet nulla quo fugiat enim voluptatem id similique. Iste, dicta! Amet architecto eligendi consectetur nemo corporis dicta id cum maiores quae, libero, odio dolores impedit iusto quisquam minus eum, earum veritatis perferendis? Hic minima, alias sint repellendus ut earum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni reprehenderit error, mollitia natus non illo culpa. Atque dicta voluptatibus cupiditate ratione dignissimos iusto. Saepe, esse. Ea ratione officia sunt veniam ipsum et vero beatae magni molestias quidem? Sed molestiae laborum, optio ratione nulla adipisci dolor fugiat magni repellat repellendus, tempore vero dolores, odit debitis est maxime quam nostrum maiores accusantium labore distinctio illum qui. Inventore architecto quisquam cum ullam dignissimos. Impedit, cupiditate. Cum aliquid molestiae minus, fugiat sint praesentium blanditiis dolores, assumenda recusandae optio illum, facilis cumque?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi accusamus temporibus quos itaque deserunt eaque cumque sapiente eveniet similique aspernatur, tenetur impedit veritatis officiis voluptates ipsum. Amet rem voluptas similique nam tempora eveniet eius nostrum, temporibus vel tempore veniam ipsa officia reprehenderit alias, earum quod ratione suscipit eos ut est maiores modi? Vitae consequatur eligendi corrupti.</p>
+
+      </div>
+    </div>
+  </div>
+
+<!--           
+<app-code-with-line-numbers>
+
+</app-code-with-line-numbers> -->
+
+<ng-template #table_BreakdownCountPoCerInPr >
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">PR Code</th>
+        <th scope="col">Total PO</th>
+        <th scope="col">Total CER</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of result_queryBreakdownCountPoCerInPr">
+        <td>{{ item.pr_code }}</td>
+        <td>{{ item.total_po }}</td>
+        <td>{{ item.total_cer }}</td>
+    </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #table_CountPoCerInPr >
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Total PO</th>
+        <th scope="col">Total CER</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of result_queryCountPoCerInPr">
+        <td>{{ item.total_po }}</td>
+        <td>{{ item.total_cer }}</td>
+    </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #table_Pr >
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Code</th>
+        <th scope="col">Date</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of result_queryPr">
+        <td>{{ item.id }}</td>
+        <td>{{ item.code }}</td>
+        <td>{{ item.date }}</td>
+        
+    </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #table_Po >
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">PR_Id</th>
+        <th scope="col">Code</th>
+        <th scope="col">Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of result_queryPo">
+        <td>{{ item.id }}</td>
+        <td>{{ item.pr_id }}</td>
+        <td>{{ item.code }}</td>
+        <td>{{ item.date }}</td>
+    </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #table_Cer >
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">PR_Id</th>
+        <th scope="col">Code</th>
+        <th scope="col">Date</th>  
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of result_queryCer">
+        <td>{{ item.id }}</td>
+        <td>{{ item.pr_id }}</td>
+        <td>{{ item.code }}</td>
+        <td>{{ item.date }}</td>
+    </tr>
+    </tbody>
+  </table>
+</ng-template>

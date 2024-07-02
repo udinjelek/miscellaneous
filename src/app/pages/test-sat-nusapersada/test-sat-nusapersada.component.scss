@@ -1,0 +1,39 @@
+.sidebar{
+    background-color: lightsteelblue;
+    height: 100vh;
+    overflow-x:hidden
+}
+
+.card-img-top{
+    background-color: aquamarine;
+}
+
+.data-main{
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
+.list-group-item {
+    position: relative;
+  }
+  
+  .list-group-item a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .list-group-item:focus-within {
+    background-color: #ff4677ed;
+    color: white;
+  }
+  
+  .list-group-item:focus-within a {
+    color: white;
+  }
+  
+// .list-group-item:target { /* Style the clicked list item */
+//     background-color: #ff4677; /* Hover background color */
+//     color: #000000
+// }
