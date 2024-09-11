@@ -18,22 +18,81 @@
     position: relative;
   }
   
-  .list-group-item a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
+.list-group-item a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-group-item:focus-within {
+  background-color: #98052ced;
+  color: white;
+}
+
+.list-group-item:hover {
+  background-color: #ff4677ed;
+  color: white;
+}
+
+
+
+hr {
+  border-top: 3px dashed gray;
+  width: 100%;  /* Adjust width as needed */
+  margin: 1rem 0;  /* Adjust margins as needed */
+}
+
+.fixed-circle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0.5; /* Set transparency to 20% */
+}
+
+
+.table-me{
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55; 
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+table{
+  
+  border: 1.5px dashed  rgb(215, 214, 214);
+}
+
+.white{
+  color:white;
+}
+
+.lightblue{
+  background-color:#eef6ff
+}
+
+  .po_cer_match{
+    background-color: #50cd89;
   }
   
-  .list-group-item:focus-within {
-    background-color: #ff4677ed;
-    color: white;
+  .po_cer_not_match{
+    background-color: #ffc700;
   }
   
-  .list-group-item:focus-within a {
-    color: white;
+  .po_only{
+    background-color: #f1416c;
   }
   
-// .list-group-item:target { /* Style the clicked list item */
-//     background-color: #ff4677; /* Hover background color */
-//     color: #000000
-// }
+  .cer_only{
+    background-color: #3E97FF;
+  }
+
+ 

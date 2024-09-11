@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-8 border-end pe-3">
+        
+            <!-- title -->
+            <div>
+                <h1 class="mb-4">Image Upload and Preview</h1> 
+            </div>
+            
+            <!-- Preview Image Section -->
+            <div class="mb-4">
+            <h2>Preview</h2>
+            <img *ngIf="previewImage" [src]="previewImage" alt="Image Preview" class="img-thumbnail" style="max-width: 300px;">
+            </div>
+        </div>  
+
+        <div class="col-4 border-start ps-3">
+            <!-- List Data Section -->
+            <div class="">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2>List Picture</h2>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="uploadImage" class="btn btn-primary">
+                            Upload Image
+                            <input type="file" id="uploadImage" class="d-none" (change)="onImageUpload($event)">
+                        </label>
+                    </div>
+                </div>
+                
+                <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of dataList; let i = index">
+                    
+                    <div class="input-group">
+                        <span class="form-control" (click)="selectImage(i)">{{ item.filename }}</span>
+                        <button class="btn btn-primary " (click)="selectImage(i)"><i class="bi bi-display"></i></button>
+                        <button class="btn btn-danger" (click)="deleteImage(i)"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+  </div>
