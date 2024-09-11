@@ -8,7 +8,6 @@ import { TestService } from '../../shared/services/test.service';
   imports: [  CommonModule,
               HttpClientModule,
               HttpClientXsrfModule ,
-              TestService,
   ],
   templateUrl: './front.component.html',
   styleUrl: './front.component.scss',
